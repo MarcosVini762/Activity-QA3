@@ -31,10 +31,6 @@ SPOTIFY_CLIENT_ID="SEU_CLIENT_ID_AQUI"
 SPOTIFY_CLIENT_SECRET="SEU_CLIENT_SECRET_AQUI"
 
 
-# Endpoints da API do Spotify
-SPOTIFY_AUTH_URL="https://accounts.spotify.com/api/token"
-SPOTIFY_API_BASE_URL="https://api.spotify.com/v1"
-
 
 
 ▶️ Execução dos Testes
