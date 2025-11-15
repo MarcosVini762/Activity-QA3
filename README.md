@@ -16,7 +16,7 @@ Para executar o projeto localmente, certifique-se de que você possui as seguint
 
 1.  git clone https://github.com/MarcosVini762/Activity-QA3.git
     
-2.  Instale o Jest, Axios e o dotenv (para carregar variáveis de ambiente):Bashnpm install
+2.  Instale o Jest, Axios e crie o seu .env:
     
 
 ### 2\. Variáveis de Ambiente
@@ -24,6 +24,18 @@ Para executar o projeto localmente, certifique-se de que você possui as seguint
 Para que o projeto consiga obter o token de autenticação e interagir com a API do Spotify, você deve configurar suas credenciais.
 
 Crie um arquivo chamado **.env** na raiz do projeto com as seguintes informações:
+
+# .env
+# Credenciais do Spotify (Client Credentials Flow)
+SPOTIFY_CLIENT_ID="SEU_CLIENT_ID_AQUI"
+SPOTIFY_CLIENT_SECRET="SEU_CLIENT_SECRET_AQUI"
+
+
+# Endpoints da API do Spotify
+SPOTIFY_AUTH_URL="https://accounts.spotify.com/api/token"
+SPOTIFY_API_BASE_URL="https://api.spotify.com/v1"
+
+
 
 ▶️ Execução dos Testes
 ----------------------
