@@ -25,17 +25,17 @@ Para que o projeto consiga obter o token de autenticação e interagir com a API
 
 Crie um arquivo chamado **.env** na raiz do projeto com as seguintes informações:
 
-# .env
+
 # Credenciais do Spotify (Client Credentials Flow)
+
+O seu .env deve ter:
 
 SPOTIFY_CLIENT_ID="SEU_CLIENT_ID_AQUI"
 
 SPOTIFY_CLIENT_SECRET="SEU_CLIENT_SECRET_AQUI"
 
 
-
-
-▶️ Execução dos Testes
+ Execução dos Testes
 ----------------------
 
 O projeto utiliza scripts definidos no package.json para facilitar a execução.
