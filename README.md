@@ -27,7 +27,9 @@ Crie um arquivo chamado **.env** na raiz do projeto com as seguintes informaçõ
 
 # .env
 # Credenciais do Spotify (Client Credentials Flow)
+
 SPOTIFY_CLIENT_ID="SEU_CLIENT_ID_AQUI"
+
 SPOTIFY_CLIENT_SECRET="SEU_CLIENT_SECRET_AQUI"
 
 
