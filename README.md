@@ -14,7 +14,7 @@ Para executar o projeto localmente, certifique-se de que você possui as seguint
 
 ### 1\. Instalação
 
-1.  git clone https://www.youtube.com/watch?v=m\_6f3r-fwsEcd \[NOME DA PASTA DO PROJETO\]
+1.  git clone https://github.com/MarcosVini762/Activity-QA3.git
     
 2.  Instale o Jest, Axios e o dotenv (para carregar variáveis de ambiente):Bashnpm install
     
