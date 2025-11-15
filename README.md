@@ -42,9 +42,7 @@ O projeto utiliza scripts definidos no package.json para facilitar a execução.
 
 ### Executar Todos os Testes
 
-Para rodar o conjunto completo de testes:
+Para rodar o conjunto completo de testes rode o comando:
 
-Bash
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm test   `
+npm test
 
