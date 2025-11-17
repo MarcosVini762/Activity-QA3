@@ -30,9 +30,9 @@ Crie um arquivo chamado **.env** na raiz do projeto com as seguintes informaçõ
 
 O seu .env deve ter:
 
-SPOTIFY_CLIENT_ID="SEU_CLIENT_ID_AQUI"
+CLIENT_ID="SEU_CLIENT_ID_AQUI"
 
-SPOTIFY_CLIENT_SECRET="SEU_CLIENT_SECRET_AQUI"
+CLIENT_SECRET="SEU_CLIENT_SECRET_AQUI"
 
 
  Execução dos Testes
