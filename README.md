@@ -16,7 +16,7 @@ Para executar o projeto localmente, certifique-se de que você possui as seguint
 
 1.  git clone https://github.com/MarcosVini762/Activity-QA3.git
     
-2.  Instale o Jest, Axios e crie o seu .env:
+2.  Instale o Jest, Axios e a extenação DotEnv e crie o seu .env:
     
 
 ### 2\. Variáveis de Ambiente
