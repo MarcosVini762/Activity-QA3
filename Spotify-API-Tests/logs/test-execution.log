@@ -1,0 +1,178 @@
+{"timestamp":"2025-11-22T14:47:18.626Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T14:47:19.164Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T14:47:19.177Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T14:47:19.669Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":491}
+{"timestamp":"2025-11-22T14:47:19.670Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T14:47:19.678Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T14:47:20.189Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T14:47:20.191Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T14:47:20.857Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T19:02:06.238Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T19:02:06.649Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T19:02:06.687Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T19:02:06.705Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T19:02:07.075Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":368}
+{"timestamp":"2025-11-22T19:02:07.075Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T19:02:07.086Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T19:02:07.633Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T19:02:07.637Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T19:02:07.813Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T19:02:08.194Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T19:02:09.366Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T19:02:09.937Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T19:05:23.319Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T19:05:23.525Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T19:05:23.744Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T19:05:23.753Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T19:05:24.136Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":382}
+{"timestamp":"2025-11-22T19:05:24.136Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T19:05:24.142Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T19:05:24.590Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T19:05:24.615Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T19:05:24.617Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T19:05:25.118Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T19:05:25.697Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T19:05:26.156Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T19:07:08.511Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T19:07:09.660Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T19:07:10.903Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T19:07:11.531Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T19:07:12.176Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T19:07:12.559Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T19:07:12.561Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T19:07:13.037Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":474}
+{"timestamp":"2025-11-22T19:07:13.037Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T19:07:13.044Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T19:07:13.577Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T19:07:13.579Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T19:07:14.014Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T19:11:19.843Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T19:11:21.173Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T19:11:22.220Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T19:11:22.819Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T19:11:23.428Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T19:11:23.771Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T19:11:23.774Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T19:11:24.272Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":498}
+{"timestamp":"2025-11-22T19:11:24.272Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T19:11:24.279Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T19:11:24.797Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T19:11:24.799Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T19:11:25.288Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:20:49.139Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:20:50.490Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:20:51.847Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:20:52.330Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:20:52.965Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:20:53.383Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:20:53.385Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:20:53.954Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":569}
+{"timestamp":"2025-11-22T20:20:53.955Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:20:53.960Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:20:54.809Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:20:54.821Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:20:55.311Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:22:39.859Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:22:41.292Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:22:42.476Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:22:42.902Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:22:43.845Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:22:44.581Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:22:44.583Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:22:45.103Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":520}
+{"timestamp":"2025-11-22T20:22:45.104Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:22:45.115Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:22:45.867Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:22:45.869Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:22:46.302Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:23:20.375Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:23:21.939Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:23:23.484Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:23:24.191Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:23:25.139Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:23:25.590Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:23:25.596Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:23:26.447Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":851}
+{"timestamp":"2025-11-22T20:23:26.447Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:23:26.453Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:23:26.963Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:23:26.965Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:23:27.545Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:26:13.893Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:26:15.303Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:26:16.516Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:26:17.145Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:26:17.924Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:26:18.563Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:26:18.568Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:26:18.948Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":380}
+{"timestamp":"2025-11-22T20:26:18.949Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:26:18.954Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:26:19.416Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:26:19.419Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:26:19.853Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:30:02.684Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:30:04.172Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:30:05.396Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:30:06.095Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:30:06.807Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:30:07.195Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:30:07.197Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:30:07.816Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":617}
+{"timestamp":"2025-11-22T20:30:07.816Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:30:07.822Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:30:08.523Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:30:08.525Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:30:09.295Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:30:38.976Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:30:40.424Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:30:41.681Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:30:42.575Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:30:43.248Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:30:43.809Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:30:43.812Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:30:44.207Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":395}
+{"timestamp":"2025-11-22T20:30:44.207Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:30:44.213Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:30:44.765Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:30:44.767Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:30:45.199Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:31:27.700Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:31:29.162Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:31:30.617Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:31:31.381Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:31:32.268Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:31:32.766Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:31:32.768Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:31:33.442Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":674}
+{"timestamp":"2025-11-22T20:31:33.442Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:31:33.452Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:31:34.314Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:31:34.318Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:31:35.003Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:35:29.041Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:35:30.220Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:35:31.423Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:35:31.956Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:35:32.604Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:35:32.950Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:35:32.955Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:35:33.596Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":640}
+{"timestamp":"2025-11-22T20:35:33.596Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:35:33.601Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:35:34.400Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:35:34.402Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:35:35.132Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-22T20:39:26.490Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-22T20:39:27.851Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-22T20:39:29.144Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-22T20:39:29.812Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-22T20:39:30.413Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-22T20:39:30.760Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-22T20:39:30.764Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-22T20:39:31.455Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":688}
+{"timestamp":"2025-11-22T20:39:31.457Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-22T20:39:31.464Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-22T20:39:32.317Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-22T20:39:32.321Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-22T20:39:32.697Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}

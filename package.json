@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --runInBand",
+    "report": "node Spotify-API-Tests/src/utils/logReportGenerator.js",
+    "test:report": "npm test && npm run report"
   },
   "repository": {
     "type": "git",
