@@ -1,8 +1,7 @@
 const logger = require("../../utils/logger");
 const { getSpotifyToken } = require("../../utils/spotify_auth");
 const requestManager = require("../requestManager");
-
-const API_BASE_URL = "https://api.spotify.com/v1";
+const testContext = require("../../utils/testContext");
 
 // Função auxiliar para medir tempo de resposta
 const measureResponseTime = async (fn) => {
@@ -16,40 +15,60 @@ const measureResponseTime = async (fn) => {
 };
 
 describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
-  let token;
 
   beforeAll(async () => {
-    token = await getSpotifyToken();
-    if (!token){ 
-      logger.error("TC-SETUP", "TOKEN_INVALIDO") 
+    testContext.startTimer();
+    testContext.setupEnvironment();
+
+    const token = await getSpotifyToken();
+    if (!token) {
+      logger.error("TC-SETUP", "TOKEN_INVALIDO");
+      testContext.recordFail();
       throw new Error("Token inválido");
     }
 
-    logger.info("TC-SETUP", "TOKEN_OBTIDO")
+    testContext.setToken(token);
+    requestManager.setToken(token);
+    logger.info("TC-SETUP", "TOKEN_OBTIDO");
+  });
+
+  afterAll(() => {
+    const summary = testContext.getSummary();
+    logger.info("TC-SUMMARY", "EXECUÇÃO_COMPLETA", summary);
+    testContext.reset();
   });
 
   const getHeaders = () => ({
-    Authorization: `Bearer ${token}`,
+    Authorization: `Bearer ${testContext.token}`,
     "Content-Type": "application/json",
   });
 
-
   // TC-001 — Buscar Artistas
-  
+
   describe("TC-001: Buscar artistas", () => {
     let response, responseTime, testError;
 
     beforeAll(async () => {
+      const artistData = testContext.getTestData("artists");
+      const { searchQuery, type, limit } = artistData;
+
       const result = await measureResponseTime(() =>
-        requestManager.get(`${API_BASE_URL}/search`, {
+        requestManager.get(`/search`, {
           headers: getHeaders(),
-          params: { q: "Taylor Swift", type: "artist", limit: 1 },
+          params: { q: searchQuery, type, limit },
         })
       );
 
       response = result.response;
       responseTime = result.responseTime;
       testError = result.error;
+
+      if (!testError) {
+        testContext.recordMetric("TC-001", "responseTime_ms", responseTime);
+        testContext.recordPass();
+      } else {
+        testContext.recordFail();
+      }
     });
 
     test("Status 200", () => {
@@ -59,12 +78,16 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
 
     test("Response time < 1500ms", () => {
       if (testError) return;
-      expect(responseTime).toBeLessThan(1500);
+      expect(responseTime).toBeLessThan(
+        testContext.validations.maxResponseTime
+      );
     });
 
     test("Content-Type JSON", () => {
       if (testError) return;
-      expect(response.headers["content-type"]).toContain("application/json");
+      expect(response.headers["content-type"]).toContain(
+        testContext.validations.contentTypeJson
+      );
     });
 
     test("Estrutura da resposta", () => {
@@ -91,7 +114,6 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
     });
   });
 
-
   // TC-002 — Obter Álbuns do Artista
 
   describe("TC-002: Obter álbuns do artista", () => {
@@ -99,20 +121,17 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
 
     beforeAll(async () => {
       try {
-        const searchRes = await requestManager.get(
-          `${API_BASE_URL}/search`,
-          {
-            headers: getHeaders(),
-            params: { q: "Coldplay", type: "artist", limit: 1 },
-          }
-        );
+        const searchRes = await requestManager.get(`/search`, {
+          headers: getHeaders(),
+          params: { q: "Coldplay", type: "artist", limit: 1 },
+        });
 
         const artistId = searchRes.data.artists.items[0].id;
 
         logger.info("TC-002", "ARTISTA_ENCONTRADO", { artistId });
 
         const result = await measureResponseTime(() =>
-          requestManager.get(`${API_BASE_URL}/artists/${artistId}/albums`, {
+          requestManager.get(`/artists/${artistId}/albums`, {
             headers: getHeaders(),
             params: { limit: 5, offset: 0 },
           })
@@ -121,8 +140,16 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
         response = result.response;
         responseTime = result.responseTime;
         testError = result.error;
+
+        if (!testError) {
+          testContext.recordMetric("TC-002", "responseTime_ms", responseTime);
+          testContext.recordPass();
+        } else {
+          testContext.recordFail();
+        }
       } catch (err) {
         testError = err;
+        testContext.recordFail();
         logger.error("TC-002", "ERRO_FATAL", { message: err.message });
       }
     });
@@ -134,12 +161,16 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
 
     test("Response time < 1500ms", () => {
       if (testError) return;
-      expect(responseTime).toBeLessThan(1500);
+      expect(responseTime).toBeLessThan(
+        testContext.validations.maxResponseTime
+      );
     });
 
     test("Content-Type JSON", () => {
       if (testError) return;
-      expect(response.headers["content-type"]).toContain("application/json");
+      expect(response.headers["content-type"]).toContain(
+        testContext.validations.contentTypeJson
+      );
     });
 
     test("Estrutura da resposta", () => {
@@ -168,7 +199,7 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
 
     beforeAll(async () => {
       const result = await measureResponseTime(() =>
-        requestManager.get(`${API_BASE_URL}/search`, {
+        requestManager.get(`/search`, {
           headers: getHeaders(),
           params: { q: "shape of you", type: "track", limit: 3 },
         })
@@ -177,6 +208,13 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
       response = result.response;
       responseTime = result.responseTime;
       testError = result.error;
+
+      if (!testError) {
+        testContext.recordMetric("TC-003", "responseTime_ms", responseTime);
+        testContext.recordPass();
+      } else {
+        testContext.recordFail();
+      }
     });
 
     test("Status 200", () => {
@@ -186,12 +224,16 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
 
     test("Response time < 1500ms", () => {
       if (testError) return;
-      expect(responseTime).toBeLessThan(1500);
+      expect(responseTime).toBeLessThan(
+        testContext.validations.maxResponseTime
+      );
     });
 
     test("Content-Type JSON", () => {
       if (testError) return;
-      expect(response.headers["content-type"]).toContain("application/json");
+      expect(response.headers["content-type"]).toContain(
+        testContext.validations.contentTypeJson
+      );
     });
 
     test("Estrutura da resposta", () => {
@@ -216,30 +258,25 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
     });
   });
 
-
   // TC-004 — Detalhes do Álbum
   describe("TC-004: Obter informações do álbum", () => {
     let response, responseTime, testError;
 
     beforeAll(async () => {
       try {
-
         logger.info("TC-004", "BUSCAR_ALBUM", { query: "album:thriller" });
 
-        const searchRes = await requestManager.get(
-          `${API_BASE_URL}/search`,
-          {
-            headers: getHeaders(),
-            params: { q: "album:thriller", type: "album", limit: 1 },
-          }
-        );
+        const searchRes = await requestManager.get(`/search`, {
+          headers: getHeaders(),
+          params: { q: "album:thriller", type: "album", limit: 1 },
+        });
 
         const albumId = searchRes.data.albums.items[0].id;
 
         logger.info("TC-004", "ALBUM_ENCONTRADO", { albumId });
 
         const result = await measureResponseTime(() =>
-          requestManager.get(`${API_BASE_URL}/albums/${albumId}`, {
+          requestManager.get(`/albums/${albumId}`, {
             headers: getHeaders(),
           })
         );
@@ -247,8 +284,16 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
         response = result.response;
         responseTime = result.responseTime;
         testError = result.error;
+
+        if (!testError) {
+          testContext.recordMetric("TC-004", "responseTime_ms", responseTime);
+          testContext.recordPass();
+        } else {
+          testContext.recordFail();
+        }
       } catch (err) {
         testError = err;
+        testContext.recordFail();
         logger.error("TC-004", "ERRO_FATAL", { message: err.message });
       }
     });
@@ -265,7 +310,9 @@ describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
 
     test("Content-Type JSON", () => {
       if (testError) return;
-      expect(response.headers["content-type"]).toContain("application/json");
+      expect(response.headers["content-type"]).toContain(
+        testContext.validations.contentTypeJson
+      );
     });
 
     test("Estrutura completa", () => {

@@ -176,3 +176,291 @@
 {"timestamp":"2025-11-22T20:39:32.317Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
 {"timestamp":"2025-11-22T20:39:32.321Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
 {"timestamp":"2025-11-22T20:39:32.697Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T17:06:21.393Z","level":"ERROR","testCase":"TC-002","action":"ERRO_FATAL","details":{"message":"Request failed with status code 401"}}
+{"timestamp":"2025-11-23T17:06:21.913Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T17:06:22.077Z","level":"ERROR","testCase":"TC-004","action":"ERRO_FATAL","details":{"message":"Request failed with status code 401"}}
+{"timestamp":"2025-11-23T17:06:22.212Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:35:21.783Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T17:35:22.730Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T17:35:23.562Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T17:35:23.855Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T17:35:24.194Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:35:24.366Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:35:24.368Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T17:35:24.638Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":269}
+{"timestamp":"2025-11-23T17:35:24.639Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T17:35:24.640Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T17:35:24.868Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T17:35:24.869Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T17:35:25.112Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T17:35:46.811Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T17:35:47.633Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T17:35:48.353Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T17:35:48.649Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T17:35:48.954Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:35:49.124Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:35:49.126Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T17:35:49.378Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":250}
+{"timestamp":"2025-11-23T17:35:49.380Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T17:35:49.384Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T17:35:49.611Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T17:35:49.613Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T17:35:49.895Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T17:56:47.903Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:56:48.254Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:56:48.257Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T17:56:48.616Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T17:56:48.841Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":224}
+{"timestamp":"2025-11-23T17:56:48.842Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T17:56:48.845Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T17:56:49.019Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T17:56:49.190Z","level":"ERROR","testCase":"TC-012","action":"PAUSE_ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T17:56:49.444Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T17:56:50.156Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T17:56:51.005Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T17:56:51.295Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T17:56:51.593Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:56:51.763Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:56:51.764Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T17:56:52.007Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":242}
+{"timestamp":"2025-11-23T17:56:52.008Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T17:56:52.009Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T17:56:52.237Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T17:56:52.239Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T17:56:52.468Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T17:57:01.341Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:57:01.651Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:57:01.655Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T17:57:01.964Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T17:57:02.150Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":185}
+{"timestamp":"2025-11-23T17:57:02.151Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T17:57:02.154Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T17:57:02.329Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T17:57:02.496Z","level":"ERROR","testCase":"TC-012","action":"PAUSE_ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T17:57:02.751Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T17:57:03.595Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T17:57:04.269Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T17:57:04.597Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T17:57:04.927Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:57:05.097Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:57:05.098Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T17:57:05.353Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":254}
+{"timestamp":"2025-11-23T17:57:05.354Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T17:57:05.355Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T17:57:05.582Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T17:57:05.583Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T17:57:05.864Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T17:57:24.191Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:57:24.507Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:57:24.511Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T17:57:24.871Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T17:57:25.084Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":210}
+{"timestamp":"2025-11-23T17:57:25.086Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T17:57:25.092Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T17:57:25.265Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T17:57:25.438Z","level":"ERROR","testCase":"TC-012","action":"PAUSE_ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T17:57:58.961Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:57:59.270Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:57:59.273Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T17:57:59.578Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T17:57:59.582Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T17:57:59.788Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":205}
+{"timestamp":"2025-11-23T17:57:59.789Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T17:57:59.792Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T17:57:59.961Z","level":"ERROR","testCase":"TC-011","action":"TOKEN_SCOPE_ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T17:57:59.963Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T17:58:00.133Z","level":"ERROR","testCase":"TC-012","action":"PAUSE_ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T17:58:13.293Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T17:58:14.116Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T17:58:14.875Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T17:58:15.253Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T17:58:15.597Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:58:15.770Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:58:15.773Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T17:58:16.016Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T17:58:16.020Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T17:58:16.232Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":210}
+{"timestamp":"2025-11-23T17:58:16.234Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T17:58:16.238Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T17:58:16.413Z","level":"ERROR","testCase":"TC-011","action":"TOKEN_SCOPE_ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T17:58:16.416Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T17:58:16.585Z","level":"ERROR","testCase":"TC-012","action":"PAUSE_ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T17:58:16.649Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T17:58:16.824Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T17:58:16.826Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T17:58:17.080Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":253}
+{"timestamp":"2025-11-23T17:58:17.082Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T17:58:17.084Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T17:58:17.309Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T17:58:17.312Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T17:58:17.552Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T18:02:49.475Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T18:02:49.824Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T18:02:49.827Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T18:02:50.180Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T18:02:50.183Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T18:02:50.365Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":181}
+{"timestamp":"2025-11-23T18:02:50.366Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T18:02:50.369Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T18:02:50.537Z","level":"ERROR","testCase":"TC-011","action":"TOKEN_SCOPE_ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T18:02:50.539Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T18:02:50.706Z","level":"ERROR","testCase":"TC-012","action":"PAUSE_ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T18:09:09.516Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T18:09:10.478Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T18:09:11.259Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T18:09:11.551Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T18:09:11.842Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T18:09:12.016Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T18:09:12.018Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T18:09:12.241Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T18:09:12.244Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T18:09:12.449Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":203}
+{"timestamp":"2025-11-23T18:09:12.450Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T18:09:12.454Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T18:09:12.624Z","level":"ERROR","testCase":"TC-011","action":"TOKEN_SCOPE_ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T18:09:12.626Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T18:09:12.793Z","level":"ERROR","testCase":"TC-012","action":"PAUSE_ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T18:09:12.854Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T18:09:13.023Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T18:09:13.025Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T18:09:13.233Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":206}
+{"timestamp":"2025-11-23T18:09:13.235Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T18:09:13.237Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T18:09:13.467Z","level":"ERROR","testCase":"TC-002","action":"SPOTIFY_ERROR","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T18:09:13.469Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T18:09:13.700Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T22:08:11.104Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T22:08:12.023Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T22:08:13.077Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T22:08:13.475Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T22:08:13.774Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":4,"failedTests":0,"skippedTests":0,"totalTime":3035,"metrics":{"TC-001":{"responseTime_ms":508},"TC-002":{"responseTime_ms":558},"TC-003":{"responseTime_ms":483},"TC-004":{"responseTime_ms":291}},"totalTests":4,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:08:13.883Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:08:14.067Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:08:14.070Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T22:08:14.302Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T22:08:14.305Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T22:08:14.492Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":186}
+{"timestamp":"2025-11-23T22:08:14.493Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T22:08:14.496Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T22:08:14.666Z","level":"ERROR","testCase":"TC-011","action":"ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T22:08:14.669Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T22:08:14.835Z","level":"ERROR","testCase":"TC-012","action":"ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T22:08:14.837Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":1,"failedTests":3,"skippedTests":0,"totalTime":953,"metrics":{"TC-010":{"responseTime_ms":186}},"totalTests":4,"successRate":"25.00%"}}
+{"timestamp":"2025-11-23T22:08:14.910Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:08:15.082Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:08:15.084Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T22:08:15.350Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":264}
+{"timestamp":"2025-11-23T22:08:15.351Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T22:08:15.354Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T22:08:15.581Z","level":"ERROR","testCase":"TC-002","action":"ERROR_ESPERADO","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T22:08:15.584Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T22:08:15.811Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T22:08:15.813Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":3,"failedTests":0,"skippedTests":0,"totalTime":901,"metrics":{"TC-001":{"responseTime_ms":264},"TC-003":{"responseTime_ms":226}},"totalTests":3,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:33:24.951Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T22:33:25.893Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T22:33:26.626Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T22:33:26.898Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T22:33:27.136Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":4,"failedTests":0,"skippedTests":0,"totalTime":2545,"metrics":{"TC-001":{"responseTime_ms":561},"TC-002":{"responseTime_ms":285},"TC-003":{"responseTime_ms":436},"TC-004":{"responseTime_ms":232}},"totalTests":4,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:33:27.212Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:33:27.383Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:33:27.386Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T22:33:27.615Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T22:33:27.618Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T22:33:27.811Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":191}
+{"timestamp":"2025-11-23T22:33:27.813Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T22:33:27.817Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T22:33:27.987Z","level":"ERROR","testCase":"TC-011","action":"ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T22:33:27.990Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T22:33:28.158Z","level":"ERROR","testCase":"TC-012","action":"ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T22:33:28.160Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":1,"failedTests":3,"skippedTests":0,"totalTime":946,"metrics":{"TC-010":{"responseTime_ms":191}},"totalTests":4,"successRate":"25.00%"}}
+{"timestamp":"2025-11-23T22:33:28.233Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:33:28.405Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:33:28.407Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T22:33:28.630Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":221}
+{"timestamp":"2025-11-23T22:33:28.632Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T22:33:28.635Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T22:33:28.856Z","level":"ERROR","testCase":"TC-002","action":"ERROR_ESPERADO","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T22:33:28.858Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T22:33:29.276Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T22:33:29.278Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":3,"failedTests":0,"skippedTests":0,"totalTime":1043,"metrics":{"TC-001":{"responseTime_ms":221},"TC-003":{"responseTime_ms":416}},"totalTests":3,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:36:08.051Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T22:36:09.003Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T22:36:09.983Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T22:36:10.267Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T22:36:10.515Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":4,"failedTests":0,"skippedTests":0,"totalTime":2822,"metrics":{"TC-001":{"responseTime_ms":532},"TC-002":{"responseTime_ms":375},"TC-003":{"responseTime_ms":593},"TC-004":{"responseTime_ms":241}},"totalTests":4,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:36:10.594Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:36:10.771Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:36:10.774Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T22:36:11.000Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":224}
+{"timestamp":"2025-11-23T22:36:11.002Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T22:36:11.004Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T22:36:11.239Z","level":"ERROR","testCase":"TC-002","action":"ERROR_ESPERADO","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T22:36:11.241Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T22:36:11.542Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T22:36:11.545Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":3,"failedTests":0,"skippedTests":0,"totalTime":950,"metrics":{"TC-001":{"responseTime_ms":224},"TC-003":{"responseTime_ms":299}},"totalTests":3,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:36:11.612Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:36:11.782Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:36:11.784Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T22:36:12.015Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T22:36:12.018Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T22:36:12.203Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":183}
+{"timestamp":"2025-11-23T22:36:12.204Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T22:36:12.208Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T22:36:12.377Z","level":"ERROR","testCase":"TC-011","action":"ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T22:36:12.379Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T22:36:12.553Z","level":"ERROR","testCase":"TC-012","action":"ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T22:36:12.555Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":1,"failedTests":3,"skippedTests":0,"totalTime":941,"metrics":{"TC-010":{"responseTime_ms":183}},"totalTests":4,"successRate":"25.00%"}}
+{"timestamp":"2025-11-23T22:41:34.225Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T22:41:35.369Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T22:41:36.134Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T22:41:36.496Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T22:41:36.741Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":4,"failedTests":0,"skippedTests":0,"totalTime":2869,"metrics":{"TC-001":{"responseTime_ms":527},"TC-002":{"responseTime_ms":351},"TC-003":{"responseTime_ms":402},"TC-004":{"responseTime_ms":239}},"totalTests":4,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:41:36.821Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:41:36.994Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:41:36.997Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T22:41:37.241Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":243}
+{"timestamp":"2025-11-23T22:41:37.242Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T22:41:37.245Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T22:41:37.478Z","level":"ERROR","testCase":"TC-002","action":"ERROR_ESPERADO","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T22:41:37.481Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T22:41:37.770Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T22:41:37.773Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":3,"failedTests":0,"skippedTests":0,"totalTime":950,"metrics":{"TC-001":{"responseTime_ms":243},"TC-003":{"responseTime_ms":287}},"totalTests":3,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T22:41:37.867Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T22:41:38.050Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T22:41:38.053Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T22:41:38.307Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T22:41:38.310Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T22:41:38.500Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":189}
+{"timestamp":"2025-11-23T22:41:38.502Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T22:41:38.507Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T22:41:38.677Z","level":"ERROR","testCase":"TC-011","action":"ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T22:41:38.679Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T22:41:38.850Z","level":"ERROR","testCase":"TC-012","action":"ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T22:41:38.853Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":1,"failedTests":3,"skippedTests":0,"totalTime":984,"metrics":{"TC-010":{"responseTime_ms":189}},"totalTests":4,"successRate":"25.00%"}}
+{"timestamp":"2025-11-23T23:21:35.029Z","level":"INFO","testCase":"TC-SETUP","action":"TOKEN_OBTIDO","details":{}}
+{"timestamp":"2025-11-23T23:21:35.973Z","level":"INFO","testCase":"TC-002","action":"ARTISTA_ENCONTRADO","details":{"artistId":"4gzpq5DPGxSnKTe4SA8HAU"}}
+{"timestamp":"2025-11-23T23:21:36.790Z","level":"INFO","testCase":"TC-004","action":"BUSCAR_ALBUM","details":{"query":"album:thriller"}}
+{"timestamp":"2025-11-23T23:21:37.095Z","level":"INFO","testCase":"TC-004","action":"ALBUM_ENCONTRADO","details":{"albumId":"2ANVost0y2y52ema1E9xAZ"}}
+{"timestamp":"2025-11-23T23:21:37.308Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":4,"failedTests":0,"skippedTests":0,"totalTime":2632,"metrics":{"TC-001":{"responseTime_ms":489},"TC-002":{"responseTime_ms":301},"TC-003":{"responseTime_ms":504},"TC-004":{"responseTime_ms":207}},"totalTests":4,"successRate":"100.00%"}}
+{"timestamp":"2025-11-23T23:21:37.401Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T23:21:37.575Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T23:21:37.577Z","level":"INFO","testCase":"TC-009","action":"REQUEST_START","details":{"endpoint":"/me"}}
+{"timestamp":"2025-11-23T23:21:37.820Z","level":"ERROR","testCase":"TC-009","action":"TOKEN_SCOPE_ERROR","details":{"status":401,"message":"Valid user authentication required"}}
+{"timestamp":"2025-11-23T23:21:37.823Z","level":"INFO","testCase":"TC-010","action":"REQUEST_START","details":{"userId":"spotify"}}
+{"timestamp":"2025-11-23T23:21:38.011Z","level":"METRIC","testCase":"TC-010","action":"responseTime_ms","value":186}
+{"timestamp":"2025-11-23T23:21:38.013Z","level":"SUCCESS","testCase":"TC-010","action":"REQUEST_SUCCESS","details":{"status":200,"userId":"spotify","displayName":"Spotify"}}
+{"timestamp":"2025-11-23T23:21:38.016Z","level":"INFO","testCase":"TC-011","action":"REQUEST_START","details":{"endpoint":"/me/player/devices"}}
+{"timestamp":"2025-11-23T23:21:38.184Z","level":"ERROR","testCase":"TC-011","action":"ERROR","details":{"status":404,"message":"Invalid username"}}
+{"timestamp":"2025-11-23T23:21:38.187Z","level":"INFO","testCase":"TC-012","action":"REQUEST_START","details":{"endpoint":"/me/player/pause"}}
+{"timestamp":"2025-11-23T23:21:38.353Z","level":"ERROR","testCase":"TC-012","action":"ERROR","details":{"status":403,"message":"Player command failed: Premium required"}}
+{"timestamp":"2025-11-23T23:21:38.356Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":1,"failedTests":3,"skippedTests":0,"totalTime":954,"metrics":{"TC-010":{"responseTime_ms":186}},"totalTests":4,"successRate":"25.00%"}}
+{"timestamp":"2025-11-23T23:21:38.421Z","level":"INFO","testCase":"TC-SETUP","action":"OBTER_TOKEN","details":{}}
+{"timestamp":"2025-11-23T23:21:38.590Z","level":"SUCCESS","testCase":"TC-SETUP","action":"TOKEN_APLICADO","details":{}}
+{"timestamp":"2025-11-23T23:21:38.592Z","level":"INFO","testCase":"TC-001","action":"REQUEST_START","details":{"albumId":"4aawyAB9vmqN3uQ7FjRGTy","market":"US"}}
+{"timestamp":"2025-11-23T23:21:38.824Z","level":"METRIC","testCase":"TC-001","action":"responseTime_ms","value":231}
+{"timestamp":"2025-11-23T23:21:38.825Z","level":"SUCCESS","testCase":"TC-001","action":"REQUEST_SUCCESS","details":{"status":200,"albumName":"Global Warming"}}
+{"timestamp":"2025-11-23T23:21:38.828Z","level":"INFO","testCase":"TC-002","action":"REQUEST_START","details":{"invalidId":"xxxxx","market":"ZZ"}}
+{"timestamp":"2025-11-23T23:21:39.052Z","level":"ERROR","testCase":"TC-002","action":"ERROR_ESPERADO","details":{"status":400,"message":"Request failed with status code 400"}}
+{"timestamp":"2025-11-23T23:21:39.054Z","level":"INFO","testCase":"TC-003","action":"REQUEST_START","details":{"ids":"4aawyAB9vmqN3uQ7FjRGTy,382ObEPsp2rxGrnsizN5TX"}}
+{"timestamp":"2025-11-23T23:21:39.312Z","level":"SUCCESS","testCase":"TC-003","action":"REQUEST_SUCCESS","details":{"status":200,"totalAlbums":2}}
+{"timestamp":"2025-11-23T23:21:39.314Z","level":"INFO","testCase":"TC-SUMMARY","action":"EXECUÇÃO_COMPLETA","details":{"passedTests":3,"failedTests":0,"skippedTests":0,"totalTime":892,"metrics":{"TC-001":{"responseTime_ms":231},"TC-003":{"responseTime_ms":257}},"totalTests":3,"successRate":"100.00%"}}

@@ -27,6 +27,10 @@ class RequestManager {
     return this.client.post(url, data, options);
   }
 
+  async put(url, data, options = {}) {
+    return this.client.put(url, data, options);
+  }
+
   async delete(url, data, options = {}){
     return this.client.delete(url, data, options)
   }
