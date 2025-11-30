@@ -1,7 +1,7 @@
-const logger = require("../../utils/logger");
-const { getSpotifyToken } = require("../../utils/spotify_auth");
-const requestManager = require("../requestManager");
-const testContext = require("../../utils/testContext");
+const logger = require("../../../utils/logger");
+const { getSpotifyToken } = require("../../../utils/spotify_auth");
+const requestManager = require("../../requestManager");
+const testContext = require("../../../utils/testContext");
 
 // Função auxiliar para medir tempo de resposta
 const measureResponseTime = async (fn) => {
@@ -15,7 +15,6 @@ const measureResponseTime = async (fn) => {
 };
 
 describe("Spotify API Tests - Public Endpoints (Refatorado)", () => {
-
   beforeAll(async () => {
     testContext.startTimer();
     testContext.setupEnvironment();

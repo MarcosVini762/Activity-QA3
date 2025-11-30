@@ -1,7 +1,7 @@
-const requestManager = require("../requestManager");
-const { getSpotifyToken } = require("../../utils/spotify_auth");
-const logger = require("../../utils/logger");
-const testContext = require("../../utils/testContext");
+const requestManager = require("../../requestManager");
+const { getSpotifyToken } = require("../../../utils/spotify_auth");
+const logger = require("../../../utils/logger");
+const testContext = require("../../../utils/testContext");
 
 beforeAll(async () => {
   logger.info("TC-SETUP", "OBTER_TOKEN", {});
@@ -28,7 +28,6 @@ afterAll(() => {
 });
 
 describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
-
   test("TC-009 – Deve consultar perfil do usuário autenticado", async () => {
     const endpoint = testContext.getTestData("albums").endpoints?.me || "/me";
     logger.info("TC-009", "REQUEST_START", { endpoint });
@@ -40,12 +39,12 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
 
       testContext.recordMetric("TC-009", "responseTime_ms", responseTime);
       testContext.recordPass();
-      
+
       logger.metric("TC-009", "responseTime_ms", responseTime);
       logger.success("TC-009", "REQUEST_SUCCESS", {
         status: response.status,
         userId: response.data?.id,
-        displayName: response.data?.display_name
+        displayName: response.data?.display_name,
       });
 
       expect(response.status).toBe(200);
@@ -64,15 +63,15 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
       );
     } catch (error) {
       testContext.recordFail();
-      
+
       logger.error("TC-009", "TOKEN_SCOPE_ERROR", {
         status: error.response?.status,
-        message: error.response?.data?.error?.message
+        message: error.response?.data?.error?.message,
       });
 
       expect([
         testContext.errorCodes.unauthorized,
-        testContext.errorCodes.forbidden
+        testContext.errorCodes.forbidden,
       ]).toContain(error.response?.status);
     }
   });
@@ -88,12 +87,12 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
 
       testContext.recordMetric("TC-010", "responseTime_ms", responseTime);
       testContext.recordPass();
-      
+
       logger.metric("TC-010", "responseTime_ms", responseTime);
       logger.success("TC-010", "REQUEST_SUCCESS", {
         status: response.status,
         userId: response.data?.id,
-        displayName: response.data?.display_name
+        displayName: response.data?.display_name,
       });
 
       expect(response.status).toBe(200);
@@ -113,10 +112,10 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
       );
     } catch (error) {
       testContext.recordFail();
-      
+
       logger.error("TC-010", "ERROR", {
         status: error.response?.status,
-        message: error.response?.data?.error?.message
+        message: error.response?.data?.error?.message,
       });
       throw error;
     }
@@ -133,11 +132,11 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
 
       testContext.recordMetric("TC-011", "responseTime_ms", responseTime);
       testContext.recordPass();
-      
+
       logger.metric("TC-011", "responseTime_ms", responseTime);
       logger.success("TC-011", "REQUEST_SUCCESS", {
         status: response.status,
-        devicesCount: response.data?.devices?.length || 0
+        devicesCount: response.data?.devices?.length || 0,
       });
 
       expect(response.status).toBe(200);
@@ -161,7 +160,7 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
         logger.info("TC-011", "DEVICE_FOUND", {
           deviceId: device.id,
           deviceName: device.name,
-          deviceType: device.type
+          deviceType: device.type,
         });
       }
 
@@ -170,16 +169,16 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
       );
     } catch (error) {
       testContext.recordFail();
-      
+
       logger.error("TC-011", "ERROR", {
         status: error.response?.status,
-        message: error.response?.data?.error?.message
+        message: error.response?.data?.error?.message,
       });
 
       expect([
         testContext.errorCodes.forbidden,
         testContext.errorCodes.notFound,
-        testContext.errorCodes.unauthorized
+        testContext.errorCodes.unauthorized,
       ]).toContain(error.response?.status);
     }
   });
@@ -195,10 +194,10 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
 
       testContext.recordMetric("TC-012", "responseTime_ms", responseTime);
       testContext.recordPass();
-      
+
       logger.metric("TC-012", "responseTime_ms", responseTime);
       logger.success("TC-012", "REQUEST_SUCCESS", {
-        status: response.status
+        status: response.status,
       });
 
       expect([200, 204]).toContain(response.status);
@@ -208,15 +207,15 @@ describe("TESTES DE API - Gerenciamento de Conta Spotify", () => {
       }
     } catch (error) {
       testContext.recordFail();
-      
+
       logger.error("TC-012", "ERROR", {
         status: error.response?.status,
-        message: error.response?.data?.error?.message
+        message: error.response?.data?.error?.message,
       });
 
       expect([
         testContext.errorCodes.forbidden,
-        testContext.errorCodes.notFound
+        testContext.errorCodes.notFound,
       ]).toContain(error.response?.status);
 
       if (error.response?.status === testContext.errorCodes.forbidden) {

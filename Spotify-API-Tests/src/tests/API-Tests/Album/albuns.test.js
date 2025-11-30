@@ -1,7 +1,7 @@
-const requestManager = require("../requestManager");
-const { getSpotifyToken } = require("../../utils/spotify_auth");
-const logger = require("../../utils/logger");
-const testContext = require("../../utils/testContext");
+const requestManager = require("../../requestManager");
+const { getSpotifyToken } = require("../../../utils/spotify_auth");
+const logger = require("../../../utils/logger");
+const testContext = require("../../../utils/testContext");
 
 beforeAll(async () => {
   logger.info("TC-SETUP", "OBTER_TOKEN", {});
@@ -28,7 +28,6 @@ afterAll(() => {
 });
 
 describe("TESTES DE API - Álbuns Spotify", () => {
-
   test("TC-001 – Deve obter um álbum específico", async () => {
     const albumData = testContext.getTestData("albums");
     const { validId: albumId, market } = albumData;
@@ -44,11 +43,11 @@ describe("TESTES DE API - Álbuns Spotify", () => {
 
       testContext.recordMetric("TC-001", "responseTime_ms", responseTime);
       testContext.recordPass();
-      
+
       logger.metric("TC-001", "responseTime_ms", responseTime);
       logger.success("TC-001", "REQUEST_SUCCESS", {
         status: response.status,
-        albumName: response.data?.name
+        albumName: response.data?.name,
       });
 
       expect(response.status).toBe(200);
@@ -58,10 +57,10 @@ describe("TESTES DE API - Álbuns Spotify", () => {
       );
     } catch (error) {
       testContext.recordFail();
-      
+
       logger.error("TC-001", "ERROR", {
         status: error.response?.status,
-        message: error.message
+        message: error.message,
       });
       throw error;
     }
@@ -79,21 +78,20 @@ describe("TESTES DE API - Álbuns Spotify", () => {
       });
 
       testContext.recordFail();
-      
+
       const msg = "A requisição deveria ter falhado e não falhou";
       logger.error("TC-002", "FAILED_EXPECTED_ERROR", { msg });
       throw new Error(msg);
-
     } catch (error) {
       if (error.message === "A requisição deveria ter falhado e não falhou") {
         throw error;
       }
 
       testContext.recordPass();
-      
+
       logger.error("TC-002", "ERROR_ESPERADO", {
         status: error.response?.status,
-        message: error.message
+        message: error.message,
       });
 
       expect(error.response.status).toBe(testContext.errorCodes.badRequest);
@@ -115,10 +113,10 @@ describe("TESTES DE API - Álbuns Spotify", () => {
 
       testContext.recordMetric("TC-003", "responseTime_ms", responseTime);
       testContext.recordPass();
-      
+
       logger.success("TC-003", "REQUEST_SUCCESS", {
         status: response.status,
-        totalAlbums: response.data.albums.length
+        totalAlbums: response.data.albums.length,
       });
 
       expect(response.status).toBe(200);
@@ -128,10 +126,10 @@ describe("TESTES DE API - Álbuns Spotify", () => {
       );
     } catch (error) {
       testContext.recordFail();
-      
+
       logger.error("TC-003", "ERROR", {
         status: error.response?.status,
-        message: error.message
+        message: error.message,
       });
       throw error;
     }
