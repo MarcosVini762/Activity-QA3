@@ -1,0 +1,104 @@
+name: CI/CD - Testes Spotify API
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    - cron: '0 9 * * *'  # Executa diariamente às 9 AM UTC
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Usar Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache das dependências
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Verificar qualidade do código
+        run: npm run lint
+        continue-on-error: true
+
+      - name: Executar testes smoke
+        run: npm run test:smoke
+        env:
+          CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        continue-on-error: true
+
+      - name: Executar suite completa de testes
+        run: npm run test:all
+        env:
+          CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+
+      - name: Coletar cobertura
+        run: npm run test:coverage
+        env:
+          CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        continue-on-error: true
+
+      - name: Gerar relatório HTML
+        run: npm run report
+        continue-on-error: true
+
+      - name: Upload do relatório
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-reports-${{ matrix.node-version }}
+          path: Spotify-API-Tests/logs/report.html
+
+      - name: Upload da cobertura
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: coverage-${{ matrix.node-version }}
+          path: coverage/
+
+      - name: Comentar resultado em PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const coverage = fs.existsSync('coverage/coverage-summary.json') 
+              ? JSON.parse(fs.readFileSync('coverage/coverage-summary.json', 'utf8'))
+              : null;
+            
+            let comment = '## 📊 Resultados dos Testes\n\n';
+            comment += '- **Status**: ✅ Suite completa executada\n';
+            comment += '- **Node.js**: ${{ matrix.node-version }}\n';
+            
+            if (coverage && coverage.total) {
+              comment += `- **Cobertura**: ${coverage.total.lines.pct}% (linhas)\n`;
+            }
+            
+            comment += '\n[Ver Relatório Completo](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})';
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            }).catch(err => console.log('Comentário não adicionado (pode ser falta de permissões)'));
