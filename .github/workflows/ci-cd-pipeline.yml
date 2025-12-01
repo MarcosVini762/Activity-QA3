@@ -63,14 +63,14 @@ jobs:
         continue-on-error: true
 
       - name: Upload do relatório
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: test-reports-${{ matrix.node-version }}
           path: Spotify-API-Tests/logs/report.html
 
       - name: Upload da cobertura
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: coverage-${{ matrix.node-version }}
