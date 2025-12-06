@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/MarcosVini762/Activity-QA3#readme",
   "dependencies": {
+    "ajv": "^8.17.1",
     "axios": "^1.13.2",
     "dotenv": "^17.2.3",
     "jest": "^30.2.0"
