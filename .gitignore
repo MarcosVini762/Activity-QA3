@@ -1,3 +1,6 @@
 .env
 node_modules/
 report
+
+coverage/
+jest-html-reporters-attach/
