@@ -25,6 +25,7 @@ module.exports = {
   collectCoverage: false,
   coverageReporters: ['text', 'lcov', 'html'],
   coverageDirectory: 'coverage',
+  maxWorkers: '50%',
   reporters: [
     'default',
     ['jest-html-reporters', {

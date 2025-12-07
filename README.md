@@ -49,6 +49,8 @@ CLIENT_SECRET="seu_client_secret_aqui"
 
 ## Execução de Testes
 
+### Testes Sequenciais (Padrão)
+
 | Comando | Descrição |
 |---------|-----------|
 | `npm test` | Executa toda a suite de testes |
@@ -56,6 +58,21 @@ CLIENT_SECRET="seu_client_secret_aqui"
 | `npm run test:coverage` | Executa testes e gera cobertura |
 | `npm run test:watch` | Executa em modo observação |
 | `npm run test:all` | Suite completa com verbosidade |
+
+### Testes em Paralelo (Recomendado)
+
+| Comando | Descrição | Tempo Estimado |
+|---------|-----------|---|
+| `npm run test:parallel` | Suite completa em paralelo (50% workers) | ~11,75s |
+| `npm run test:parallel:limited` | Suite com apenas 2 workers | ~17,5s |
+| `npm run test:parallel:full` | Suite com 100% dos workers | ~12s |
+| `npm run test:parallel:coverage` | Paralelo com cobertura de código | ~13s |
+| `npm run test:parallel:report` | Paralelo com geração de relatório | ~12s |
+
+### Utilitários
+
+| Comando | Descrição |
+|---------|-----------|
 | `npm run test:ci` | Lint + testes + cobertura + relatório |
 | `npm run lint` | Verifica qualidade de código |
 | `npm run lint:fix` | Corrige problemas de linting |
